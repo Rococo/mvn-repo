@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.sf.microlog</groupId>
+	<artifactId>microlog</artifactId>
+	<version>2.2.5</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>microlog-logger-core</module>
+		<module>microlog-logger-midp</module>
+		<module>microlog-logger-midp-bluetooth</module>
+		<module>microlog-logger-midp-file</module>
+		<module>microlog-logger-midp-s3</module>
+		<module>microlog-logger-midp-wma</module>
+		<module>microlog-logger-midp-examples</module>
+		<module>microlog-logger-spot</module>
+		<module>microlog-logger-tests</module>
+		<module>microlog-server-bluetooth</module>
+		<module>microlog-server-http</module>
+		<module>microlog-server-socket</module>
+		<module>microlog-jsr205-stubs</module>
+		<module>microlog-dist</module>
+	</modules>
+
+	<description>
+		Microlog is a small, yet powerful logging library for mobile
+		devices based on the Log4j API. Supports Java ME (J2ME) and
+		Android. Logs to device, to PC or to servers online. Used in all
+		phases from development on emulator/device to outdoor
+		field-testing.
+	</description>
+	<url>http://microlog.sourceforge.net</url>
+	<name>Microlog parent</name>
+
+	<organization>
+		<name>SourceForge.net Microlog</name>
+		<url>http://microlog.sourceforge.net</url>
+	</organization>
+	<inceptionYear>2005</inceptionYear>
+
+	<issueManagement>
+		<system>SourceForge</system>
+		<url>http://sourceforge.net/tracker/?group_id=138008</url>
+	</issueManagement>
+	<contributors>
+		<contributor>
+			<name>Ricardo Amores Hern ndez</name>
+			<roles>
+				<role>Contributed the CanvasAppender</role>
+			</roles>
+		</contributor>
+		<contributor>
+			<name>Marius de Beer</name>
+			<roles>
+				<role>
+					Contributed the GPRSAppender, which is now the
+					DatagramAppender.
+				</role>
+			</roles>
+		</contributor>
+		<contributor>
+			<name>Diego Tognola</name>
+			<roles>
+				<role>Contributed with a lot of useful feedback.</role>
+				<role>Some bug reports</role>
+			</roles>
+		</contributor>
+		<contributor>
+			<name>Mark Kranz</name>
+			<roles>
+				<role>Contributed with the Microlog4SPOT code.</role>
+			</roles>
+		</contributor>
+		<contributor>
+			<name>Jimisola Laursen</name>
+			<roles>
+				<role>
+					Contributed with feedback and feature requests.
+				</role>
+			</roles>
+		</contributor>
+	</contributors>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<mailingLists>
+		<mailingList>
+			<name>Microlog-develop</name>
+			<post>microlog-develop@lists.sourceforge.net</post>
+			<subscribe>
+				https://lists.sourceforge.net/lists/listinfo/microlog-develop
+			</subscribe>
+			<unsubscribe>
+				https://lists.sourceforge.net/lists/listinfo/microlog-develop
+			</unsubscribe>
+			<archive>
+				https://sourceforge.net/mailarchive/forum.php?forum_name=microlog-develop
+			</archive>
+		</mailingList>
+		<mailingList>
+			<name>Microlog Help Forum</name>
+			<post>
+				https://sourceforge.net/forum/forum.php?forum_id=464717
+			</post>
+		</mailingList>
+		<mailingList>
+			<name>Microlog Developer Forum</name>
+			<post>
+				https://sourceforge.net/forum/forum.php?forum_id=464718
+			</post>
+		</mailingList>
+		<mailingList>
+			<name>Microlog Open Discussion Forum</name>
+			<post>
+				https://sourceforge.net/forum/forum.php?forum_id=464716
+			</post>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<developerConnection>
+			scm:svn:https://microlog.svn.sourceforge.net/svnroot/microlog/trunk
+		</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<name>Johan Karlsson</name>
+			<id>jaywayjohan</id>
+			<email>jaywayjohan@users.sourceforge.net</email>
+			<organization>Jayway</organization>
+			<organizationUrl>http://www.jayway.com/</organizationUrl>
+			<timezone>1</timezone>
+			<roles>
+				<role>Founder</role>
+				<role>Developer</role>
+				<role>Project Admin</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Darius Katz</name>
+			<id>dariuskatz</id>
+			<email>dariuskatz@users.sourceforge.net</email>
+			<organization>Jayway</organization>
+			<organizationUrl>http://www.jayway.com/</organizationUrl>
+			<timezone>1</timezone>
+			<roles>
+				<role>Developer</role>
+				<role>Project Admin</role>
+				<role>Graphical artist</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Karsten Ohme</name>
+			<id>k_o_</id>
+			<email>k_o_@users.sourceforge.net</email>
+			<timezone>1</timezone>
+			<roles>
+				<role>Developer</role>
+				<role>Maven specialist</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Henrik Larne</name>
+			<id>henriklarne</id>
+			<email>henriklarne@users.sourceforge.net</email>
+			<organization>Jayway</organization>
+			<organizationUrl>http://www.jayway.com/</organizationUrl>
+			<timezone>1</timezone>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>mattiasarthursson</id>
+			<name>Mattias Arthursson</name>
+			<email>marthursson@users.sourceforge.net</email>
+			<organization>Jayway</organization>
+			<organizationUrl>http://www.jayway.com/</organizationUrl>
+			<timezone>1</timezone>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Jarle Hansen</name>
+			<id>jarlehansen</id>
+			<timezone>1</timezone>
+			<roles>
+				<role>Developer</role>
+				<role>Bluetooth specialist</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>bobya</id>
+			<name>Boris</name>
+			<roles>
+				<role>Maven developer</role>
+			</roles>
+		</developer>
+
+	</developers>
+
+	<repositories>
+		<repository>
+			<id>microlog-snapshots</id>
+			<url>http://oss.sonatype.org/content/repositories/sourceforge-snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>microlog-snapshots</id>
+			<url>http://oss.sonatype.org/content/repositories/sourceforge-snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+
+		<pluginRepository>
+			<id>maven-central</id>
+			<url>repo1.maven.org/maven2</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
+		<pluginRepository>
+			<id>snapshot-codehouse</id>
+			<url>http://snapshots.repository.codehaus.org</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<!-- Properties -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!--me-version-->
+		<me2Version>2.0.3</me2Version>
+	</properties>
+
+	<dependencyManagement>
+
+		<dependencies>
+			<dependency>
+				<groupId>org.microemu</groupId>
+				<artifactId>cldcapi11</artifactId>
+				<version>2.0.3</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.microemu</groupId>
+				<artifactId>midpapi20</artifactId>
+				<version>2.0.3</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>net.sf.bluecove</groupId>
+				<artifactId>bluecove</artifactId>
+				<version>2.1.0</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.microemu</groupId>
+				<artifactId>microemu-jsr-75</artifactId>
+				<version>2.0.3</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.microemu</groupId>
+				<artifactId>microemu-jsr-82</artifactId>
+				<version>2.0.3</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.pyx4me</groupId>
+				<artifactId>cldcunit-instrument</artifactId>
+				<version>${me2Version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.pyx4me</groupId>
+				<artifactId>cldcunit</artifactId>
+				<version>${me2Version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.pyx4me</groupId>
+				<artifactId>cldcunit-se</artifactId>
+				<version>${me2Version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.5</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<distributionManagement>
+		<repository>
+			<id>microlog-releases</id>
+			<name>Your Staging Repository</name>
+			<url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>microlog-snapshots</id>
+			<name>Your Snapshot Repository</name>
+			<url>http://oss.sonatype.org/content/repositories/sourceforge-snapshots/</url>
+		</snapshotRepository>
+
+		<site>
+			<id>microlog.sourceforge.site</id>
+			<name>MicroLog SourceForge Site</name>
+			<url>
+				scp://shell.sourceforge.net/home/groups/m/mi/microlog/htdocs/site
+			</url>
+		</site>
+	</distributionManagement>
+
+	<!-- Build plugins -->
+	<build>
+		<!-- For SSH distribution -->
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
+		<pluginManagement>
+			<plugins>
+			<!--
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>findbugs-maven-plugin</artifactId>
+					<version>2.0.1</version>
+				</plugin>
+				-->
+				
+				
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.5</source>
+						<target>1.5</target>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.1.1</version>
+					<executions>
+						<execution>
+							<id>attach-sources</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>jar-no-fork</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<!-- Specifies test settings -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>2.0-beta-7</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.0-beta-9</version>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<reporting>
+		<plugins>
+		    <!--
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+			</plugin>
+			-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.6.1</version>
+				<configuration>
+					<aggregate>true</aggregate>
+					<groups>
+						<group>
+							<title>Microlog</title>
+							<packages>net.sf.microlog.*</packages>
+						</group>
+					</groups>
+					<excludePackageNames>com.*:org.*:amazon.*:javax.*:net.sf.microproperties*</excludePackageNames>
+					<!-- Default configuration for all reports -->
+				</configuration>
+				<reportSets>
+					<reportSet>
+						<id>non-aggregate</id>
+						<configuration>
+							<!-- Specific configuration for the non aggregate report -->
+						</configuration>
+						<reports>
+							<report>javadoc</report>
+						</reports>
+					</reportSet>
+					<reportSet>
+						<id>aggregate</id>
+						<configuration>
+
+							<!-- Specific configuration for the aggregate report -->
+						</configuration>
+						<reports>
+							<report>aggregate</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jxr-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</reporting>
+
+
+	<!-- Build without running tests -->
+	<profiles>
+		<!--
+			This profile enable the signing and releasing to the Sonatype OSS
+			repository. For more information see:
+			http://nexus.sonatype.org/oss-repository-hosting.html
+		-->
+		<profile>
+			<id>release-sign-artifacts</id>
+			<activation>
+				<property>
+					<name>performRelease</name>
+					<value>true</value>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<!--  <version>1.0-alpha-4</version> -->
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

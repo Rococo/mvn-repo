@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.localsocial</groupId>
+  <artifactId>localsocial-j2me</artifactId>
+  <version>0.6.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20120116042236</lastUpdated>
+  </versioning>
+</metadata>

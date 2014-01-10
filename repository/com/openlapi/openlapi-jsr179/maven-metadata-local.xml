@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.openlapi</groupId>
+  <artifactId>openlapi-jsr179</artifactId>
+  <version>0.9.13</version>
+  <versioning>
+    <versions>
+      <version>0.9.13</version>
+    </versions>
+    <lastUpdated>20110325121402</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.localsocial</groupId>
+  <artifactId>localsocial-j2se</artifactId>
+  <version>0.3.2-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>localsocial</name>
+  <dependencies>
+    <dependency>
+      <groupId>org.scribe</groupId>
+      <artifactId>scribe</artifactId>
+      <version>1.0.7</version>
+    </dependency>
+  </dependencies>
+</project>
