@@ -5,23 +5,11 @@
   <usePluginRegistry/>
   <offline/>
   <proxies/>
-      <servers>
-        <server>
-          <id>internal</id>
-          <username>admin</username>
-          <password>noW1res</password>
-        </server>
-        <server>
-          <id>snapshots</id>
-          <username>admin</username>
-          <password>noW1res</password>
-        </server>
-      </servers>
       <mirrors>
         <mirror>
           <id>artifactory</id>
           <mirrorOf>*</mirrorOf>
-          <url>http://localsocial-maven:8080/archiva/repository/internal</url>
+          <url>https://github.com/Rococo/mvn-repo</url>
           <name>LocalSocial</name>
         </mirror>
       </mirrors>
@@ -38,7 +26,7 @@
             <repository>
               <id>internal</id>
               <name>LocalSocial Managed Internal Repository</name>
-              <url>http://localsocial-maven:8080/archiva/repository/internal/</url>
+              <url>https://github.com/Rococo/mvn-repo</url>
               <releases>
                 <enabled>true</enabled>
               </releases>
@@ -54,7 +42,7 @@
             <pluginRepository>
               <id>internal</id>
               <name>LocalSocial Managed Internal Repository</name>
-              <url>http://localsocial-maven:8080/archiva/repository/internal/</url>
+              <url>https://github.com/Rococo/mvn-repo</url>
               <releases>
                 <enabled>true</enabled>
               </releases>
